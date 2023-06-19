@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>page d'inscription</title>
+		<style>
+			fieldset{
+				background-color: skybluee;
+				background-repeat:no-repeat;
+			}
+			input, textarea{
+				background-color: lemonchiffon;
+				border-radius: 10px;
+
+			}
+			header{
+				background-color: green;
+				padding: 2px;
+			}
+			header h1{
+				color: white;
+			}
+			input[type="text"], input[type="password"], input[type="date"]{
+				width: 500px;
+				
+			}
+			label{
+				padding-right: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<center><p><h1>formulaire d'inscription</h1></p></center>
+		</header>
+		<form method="post" action="traitement.php">
+			<fieldset>
+				<legend><strong>VOS INFORMATIONS</strong></legend>
+				<p>
+					<label for="nom">Votre nom</label>
+					<input type="text" id="nom" name="nom"/>
+				</p>
+				<p>
+					<label for="prenom">Votre prenom</label>
+					<input type="text" id="prenom" name="prenom"/>
+				</p>
+				<p>
+					<label for="adresse">Adresse</label>
+					<input type="text" id="adresse" name="Adresse"/>
+				</p>
+				<p>
+					<label for="date">Date</label>
+					<input type="date" id="date de naissance" name="date de naissance"/>
+				</p>
+				<p>
+					<label for="sexe">Votre sexe :</label>
+					<input type="radio" id="masculin" name="sexe" value="Homme"/>
+					Homme
+					<input type="radio" id="feminin" name="sexe" value="Femme"/>
+					femme
+				</p>
+				<p>
+					<label for="mail">Adresse e-mail</label>
+					<input type="text" id="e-mail" name="e-mail"/>
+				</p>
+				<p>
+					<label for="password">Votre mot de passe</label>
+					<input type="password" id="password" name="password"/>
+				</p>
+				<p>
+					<label for="montext">Avez-vous d'autres details a preciser ?</label>
+					<textarea name="montext" id="montext"></textarea>
+				</p>
+			</fieldset>
+			<input type="submit" value="Envoyer"/>
+		</form>
+	</body>
+</html>
